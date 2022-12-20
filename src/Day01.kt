@@ -1,15 +1,34 @@
 fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
+    fun elves(input: List<String>): MutableList<Int> {
+        val elves = mutableListOf<Int>()
+        var currentElf = 0
+
+        input.forEach {
+            if (it == "") {
+                elves.add(currentElf)
+                currentElf = 0
+                return@forEach
+            }
+
+            currentElf += it.toInt()
+        }
+
+        elves.add(currentElf)
+
+        return elves
     }
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
+    fun part1(input: List<String>) = elves(input)
+        .max()
 
-    // test if implementation meets criteria from the description, like:
+    fun part2(input: List<String>) = elves(input)
+        .sortedDescending()
+        .take(3)
+        .sum()
+
     val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
+    part1(testInput).println()
+    part2(testInput).println()
 
     val input = readInput("Day01")
     part1(input).println()

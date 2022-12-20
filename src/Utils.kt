@@ -9,6 +9,12 @@ fun readInput(name: String) = File("src", "$name.txt")
     .readLines()
 
 /**
+ * Reads text from the given input txt file.
+ */
+fun readText(name: String) = File("src", "$name.txt")
+    .readText()
+
+/**
  * Converts string to md5 hash.
  */
 fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteArray()))
