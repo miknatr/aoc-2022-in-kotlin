@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     fun elves(input: List<String>): MutableList<Int> {
         val elves = mutableListOf<Int>()

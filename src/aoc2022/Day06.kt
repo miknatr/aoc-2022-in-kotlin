@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     fun part1(input: List<String>) = input
         .filter { it != "" }

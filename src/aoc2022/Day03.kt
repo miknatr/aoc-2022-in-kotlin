@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     println('A'.code)
     println('Z'.code)

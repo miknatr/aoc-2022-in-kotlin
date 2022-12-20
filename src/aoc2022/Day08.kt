@@ -1,3 +1,5 @@
+package aoc2022
+
 import kotlin.math.max
 
 fun main() {

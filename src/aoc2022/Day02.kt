@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     class Round(
         // A for Rock, B for Paper, and C for Scissors

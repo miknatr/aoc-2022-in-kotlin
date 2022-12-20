@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     data class File(
         val name: String,

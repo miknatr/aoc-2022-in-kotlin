@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     fun IntRange.isFullyContain(range: IntRange) =
         (this.contains(range.first) && this.contains(range.last)) || (range.contains(this.first) && range.contains(this.last))

@@ -1,3 +1,5 @@
+package aoc2022
+
 fun main() {
     class Command(val howMany: Int, val from: Int, val to: Int)
 
